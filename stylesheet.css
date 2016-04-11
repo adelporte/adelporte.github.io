@@ -31,24 +31,28 @@ h1 {
 /*Main Container*/
 
 .main-container {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 }
 
 .main-container img {
-    display: block;
+    order: 1;
     margin-left: auto;
     margin-right: auto }
 }
 
 .left-block {
-    display: inline-block;
+    order: 2;
     width: 380px;
     height: 380px;
     margin: 1em;
 }
 
 .right.block {
-    display: inline-block;
+    order: 3;
     width: 380px;
     height: 380px;
     margin: 1em;
