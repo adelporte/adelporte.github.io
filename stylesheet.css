@@ -36,14 +36,12 @@ h1 {
 }
 
 .left-block {
-    float: left;
     display: inline-block;
     width: 380px;
     height: 380px;
 }
 
 .right.block {
-    float: left;
     display: inline-block;
     width: 380px;
     height: 380px;
@@ -54,6 +52,6 @@ h1 {
 footer {
     font-weight: 800;
     display: block;
-    clear: both;
+    width: 100%;
     text-align: center;
 }
