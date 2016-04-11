@@ -13,6 +13,10 @@ h1 {
     vertical-align: middle;
 }
 
+header {
+    display: block;
+}
+
 footer {
     font-weight: 800;
     display: block;
@@ -28,14 +32,14 @@ footer {
 
 .left-block {
     float: left;
-    display: inline;
+    display: inline-block;
     padding: 10px 10px 10px 10px;
     width: 380px;
 }
 
 .right.block {
     float: right;
-    display: inline;
+    display: inline-block;
     padding: 10px 10px 10px 10px;
     width: 380px;
 }
