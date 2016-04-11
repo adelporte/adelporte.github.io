@@ -28,14 +28,14 @@ footer {
 
 .left-block {
     float: left;
-    display: inline-block;
+    display: inline;
     padding: 10px 10px 10px 10px;
     width: 380px;
 }
 
 .right.block {
     float: right;
-    display: inline-block;
+    display: inline;
     padding: 10px 10px 10px 10px;
     width: 380px;
 }
