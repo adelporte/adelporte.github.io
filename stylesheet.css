@@ -8,6 +8,7 @@ h1 {
     font-variant: small-caps;
     font-weight: 800;
     height: 100px;
+    width: 800px;
     line-height: 140px;
     vertical-align: middle;
 }
@@ -19,7 +20,6 @@ footer {
 
 .intro-img {
     float: left;
-    displ
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -33,5 +33,6 @@ footer {
 
 .right.block {
     float: right;
+    margin: 10px;
     width: 400px;
 }
