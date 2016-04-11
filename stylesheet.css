@@ -1,66 +1,286 @@
-* {
+body {
     font-family: Calibri, New Romance, serif;
-    font-size: 18px;
+    font-size: 20px;
     background-image: url("http://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg");
-    background-repeat: repeat-x;
+    background-repeat: repeat;
+    line-height: 25px;
 }
 
 /* header */
 
 header {
-    display: block;
+    display: flex;
+    border-bottom: 10px solid black;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-h1 {
-    font-size: 60px;
-    font-variant: small-caps;
-    font-weight: 800;
-    height: 100px;
-    line-height: 140px;
-    vertical-align: middle;
+@media all and (max-width: 800px) {
+  .header {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
 }
 
 .intro-img {
+    order: 1;
     float: left;
-    height: 150px;
-    width: 150px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    margin-right: 60px;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+    margin: 0 50px;
+}
+
+h1 {
+    order: 2;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: 800;
+    margin: 0 10px;
+    width:300px;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotatey(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotatey(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotatey(360deg);
+        transform:rotatey(360deg);
+    }
+}
+
+.main-navigation ul {
+    order:3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.main-navigation li {
+    display: inline;
+}
+
+@media all and (max-width: 800px) {
+  .main-navigation li {
+    display: block;
+    margin: 35px 0;
+  }
+}
+
+.main-navigation li a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0.5px solid black;
+}
+
+.main-navigation a:hover {
+    color: black;
+    font-weight: 500;
+    border: 0.5px solid #FB0000;
+}
+
+/*Other Headers*/
+h2 {
+    font-size:20px;
+    font-variant: small-caps;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: 800;
 }
 
 /*Main Container*/
 
-.main-container {
+.main-container-1 {
     display: flex;
-    row-reverse: ltr;
-    flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .img-container {
     order: 1;
+    height: 500px;
+    width: 600px;
+    padding: 0 10px;
+}
+
+.img-container img {
+    width:100%;
+}
+
+.img-container figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-container figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
 }
 
 .left-block {
     order: 2;
-    width: 380px;
-    height: 380px;
-    margin: 1em;
+    width: 400px;
+    padding: 0 10px;
 }
 
 .right-block {
     order: 3;
-    width: 380px;
-    height: 380px;
-    margin: 1em;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.button-cta-1 {
+    background: black;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 32px;
+    border: 2px solid black;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.button-cta-1:hover {
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    border: 2px solid #f44336;
+    font-weight: 800; 
+    margin-top: 20px;
+}
+
+/*Container #2*/
+
+.main-container-2 {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block-2-1 {
+    order: 1;
+    width: 300px;
+    margin: 50px;
+}
+
+.block-2-2 {
+    order: 2;
+    width: 300px;
+    margin: 50px;
+}
+
+.block-2-3 {
+    order: 3;
+    width: 300px;
+    margin: 50px; 
+}
+
+.block-2-4 {
+    order: 3;
+    width: 300px;
+    margin: 50px; 
+}
+
+.button-cta-2 {
+    background: black;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 32px;
+    border: 2px solid black;
+    font-weight: 800;
+}
+
+.button-cta-2:hover {
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    border: 2px solid #f44336;
+    font-weight: 800; 
+}
+
+.image-blocks-2 figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.image-blocks-2 figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
 }
 
 /*Footer */
 
 footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #DE4545;
+    border-top: 10px solid black;
+    color: white;
+}
+
+.footer-box-1 {
+    order: 1;
+    width: 300px;
+    margin: 50px; 
+}
+
+.footer-box-2 {
+    order: 2;
+    width: 300px;
+    margin: 50px; 
+}
+
+.footer-box-3 {
+    order: 3;
+    width: 300px;
+    margin: 50px; 
+}
+
+.title-footer {
     font-weight: 800;
-    display: block;
-    width: 100%;
-    text-align: center;
+}
+
+/*Separator*/
+
+.separator {
+    height: 2px;
+    background: #717171;
+    border-bottom: 2px solid #FB0000;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
