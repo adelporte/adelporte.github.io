@@ -6,6 +6,12 @@
     background-repeat: repeat-x;
 }
 
+/* header */
+
+header {
+    display: block;
+}
+
 h1 {
     font-size: 60px;
     font-variant: small-caps;
@@ -15,15 +21,6 @@ h1 {
     vertical-align: middle;
 }
 
-header {
-    display: block;
-}
-
-footer {
-    font-weight: 800;
-    display: block;
-}
-
 .intro-img {
     float: left;
     height: 150px;
@@ -31,6 +28,8 @@ footer {
     border-radius: 50%;
     margin-right: 60px;
 }
+
+/*Main Container*/
 
 .main-container {
     width: 100%;
@@ -48,4 +47,12 @@ footer {
     display: inline-block;
     width: 380px;
     height: 380px;
+}
+
+/*Footer */
+
+footer {
+    font-weight: 800;
+    display: block;
+    clear: left;
 }
