@@ -1,6 +1,7 @@
 * {
     font-family: Calibri, New Romance, serif;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 200%;
 }
 
 h1 {
@@ -8,7 +9,6 @@ h1 {
     font-variant: small-caps;
     font-weight: 800;
     height: 100px;
-    width: 800px;
     line-height: 140px;
     vertical-align: middle;
 }
@@ -28,14 +28,14 @@ footer {
 
 .left-block {
     float: left;
+    display: inline-block;
     padding: 10px 10px 10px 10px;
     width: 380px;
-    line-height: 15px;
 }
 
 .right.block {
     float: right;
+    display: inline-block;
     padding: 10px 10px 10px 10px;
     width: 380px;
-    line-height: 15px;
 }
