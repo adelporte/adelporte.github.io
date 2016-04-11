@@ -1,11 +1,14 @@
 * {
     font-family: Calibri, New Romance, serif;
+    line-height: 15px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 60px;
     font-variant: small-caps;
     font-weight: 800;
+    margin-right: 60px;
+    line-height: normal;
 }
 
 footer {
