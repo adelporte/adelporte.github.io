@@ -2,6 +2,8 @@
     font-family: Calibri, New Romance, serif;
     font-size: 18px;
     line-height: 200%;
+    background-image: url("http://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg");
+    background-repeat: repeat-x;
 }
 
 h1 {
