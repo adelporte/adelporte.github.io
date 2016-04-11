@@ -28,11 +28,12 @@ footer {
 
 .left-block {
     float: left;
-    width: 400px;
+    padding: 10px 10px 10px 10px;
+    width: 380px;
 }
 
 .right.block {
     float: right;
-    margin: 10px;
-    width: 400px;
+    padding: 10px 10px 10px 10px;
+    width: 380px;
 }
