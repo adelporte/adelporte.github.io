@@ -35,6 +35,7 @@ h1 {
 }
 
 .main-container img {
+    height: 500px;
     width: 500px;
 }
 
